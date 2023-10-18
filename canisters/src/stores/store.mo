@@ -1,7 +1,7 @@
-import Text "mo:base/Text";
+import Array "mo:base/Array";
 import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
-import Array "mo:base/Array";
+import Text "mo:base/Text";
 
 module {
   public class Store<T>() {

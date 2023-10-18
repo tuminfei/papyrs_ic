@@ -1,18 +1,15 @@
-import Text "mo:base/Text";
 import HashMap "mo:base/HashMap";
-import Result "mo:base/Result";
-import Time "mo:base/Time";
 import Int "mo:base/Int";
+import Result "mo:base/Result";
+import Text "mo:base/Text";
+import Time "mo:base/Time";
 
 import Store "../stores/store";
-
-import Filter "./record.filter";
-
-import InteractionTypes "./interaction.types";
 import Types "../types/types";
-
-import RecordUtils "./record.utils";
+import InteractionTypes "./interaction.types";
 import InteractionUtils "./interaction.utils";
+import Filter "./record.filter";
+import RecordUtils "./record.utils";
 
 module {
   type RecordFilter = Filter.RecordFilter;

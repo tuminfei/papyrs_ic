@@ -1,17 +1,14 @@
-import Text "mo:base/Text";
+import Array "mo:base/Array";
 import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
-import Array "mo:base/Array";
 import Principal "mo:base/Principal";
+import Text "mo:base/Text";
 import Time "mo:base/Time";
 
-import IC "../types/ic.types";
-
 import Store "../stores/store";
-
+import IC "../types/ic.types";
 import PostFilter "./post.filter";
 import PostTypes "./post.types";
-
 import ProposalTypes "./proposal.types";
 
 module {

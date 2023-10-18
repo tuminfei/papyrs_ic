@@ -1,18 +1,16 @@
-import Text "mo:base/Text";
 import Error "mo:base/Error";
-import Principal "mo:base/Principal";
 import Iter "mo:base/Iter";
+import Principal "mo:base/Principal";
 import Result "mo:base/Result";
+import Text "mo:base/Text";
 
+import Utils "../utils/utils";
 import PostFilter "./post.filter";
 import PostStore "./post.store";
 import PostTypes "./post.types";
-
 import ProposalFilter "./proposal.filter";
 import ProposalStore "./proposal.store";
 import ProposalTypes "./proposal.types";
-
-import Utils "../utils/utils";
 
 actor class Feed(secret : Text) {
 

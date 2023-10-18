@@ -1,25 +1,21 @@
-import HashMap "mo:base/HashMap";
-import Text "mo:base/Text";
-import Iter "mo:base/Iter";
-import Result "mo:base/Result";
-import Error "mo:base/Error";
 import Array "mo:base/Array";
 import Buffer "mo:base/Buffer";
+import Error "mo:base/Error";
+import HashMap "mo:base/HashMap";
+import Iter "mo:base/Iter";
 import Principal "mo:base/Principal";
-
-import Types "../types/types";
-import DataTypes "./data.types";
-import InteractionTypes "./interaction.types";
-
-import Filter "./record.filter";
-
-import Utils "../utils/utils";
-import WalletUtils "../utils/wallet.utils";
-
-import DataStore "./data.store";
-import InteractionStore "./interaction.store";
+import Result "mo:base/Result";
+import Text "mo:base/Text";
 
 import Env "../env";
+import Types "../types/types";
+import Utils "../utils/utils";
+import WalletUtils "../utils/wallet.utils";
+import DataStore "./data.store";
+import DataTypes "./data.types";
+import InteractionStore "./interaction.store";
+import InteractionTypes "./interaction.types";
+import Filter "./record.filter";
 
 actor class DataBucket(owner : Types.UserId) = this {
 
@@ -102,7 +98,7 @@ actor class DataBucket(owner : Types.UserId) = this {
 
   /**
    * Interactions: comments and likes
-   * 
+   *
    * key = /docs/{docId}
    *
    * comments = /docs/{docId}/comments/{commentId}

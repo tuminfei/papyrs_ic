@@ -1,7 +1,7 @@
 import Principal "mo:base/Principal";
 
-import Types "../types/types";
 import IC "../types/ic.types";
+import Types "../types/types";
 
 module {
   public type BucketId = IC.canister_id;

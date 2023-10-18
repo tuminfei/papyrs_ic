@@ -1,6 +1,6 @@
+import Blob "mo:base/Blob";
 import Text "mo:base/Text";
 import Time "mo:base/Time";
-import Blob "mo:base/Blob";
 
 import RecordTypes "./record.types";
 

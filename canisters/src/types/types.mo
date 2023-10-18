@@ -1,5 +1,5 @@
-import Text "mo:base/Text";
 import Principal "mo:base/Principal";
+import Text "mo:base/Text";
 
 module {
 

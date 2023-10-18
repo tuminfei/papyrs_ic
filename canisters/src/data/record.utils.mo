@@ -1,5 +1,5 @@
-import Result "mo:base/Result";
 import Int "mo:base/Int";
+import Result "mo:base/Result";
 import Time "mo:base/Time";
 
 import RecordTypes "./record.types";

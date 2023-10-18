@@ -1,6 +1,6 @@
-import Text "mo:base/Text";
-import Nat8 "mo:base/Nat8";
 import Nat16 "mo:base/Nat16";
+import Nat8 "mo:base/Nat8";
+import Text "mo:base/Text";
 
 module {
   public type HeaderField = (Text, Text);

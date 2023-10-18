@@ -1,5 +1,4 @@
 import IC "../types/ic.types";
-
 import PostTypes "./post.types";
 
 module {

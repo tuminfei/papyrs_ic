@@ -1,10 +1,10 @@
+import Blob "mo:base/Blob";
 import Text "mo:base/Text";
 import Time "mo:base/Time";
-import Blob "mo:base/Blob";
 
+import Types "../types/types";
 import DataTypes "./data.types";
 import RecordTypes "./record.types";
-import Types "../types/types";
 
 module {
 

@@ -1,15 +1,13 @@
-import Text "mo:base/Text";
+import Array "mo:base/Array";
 import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
-import Array "mo:base/Array";
 import Principal "mo:base/Principal";
-import Time "mo:base/Time";
 import Result "mo:base/Result";
-
-import IC "../types/ic.types";
+import Text "mo:base/Text";
+import Time "mo:base/Time";
 
 import Store "../stores/store";
-
+import IC "../types/ic.types";
 import ProposalFilter "./proposal.filter";
 import ProposalTypes "./proposal.types";
 

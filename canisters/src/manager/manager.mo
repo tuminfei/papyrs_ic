@@ -1,26 +1,22 @@
-import Cycles "mo:base/ExperimentalCycles";
+import Array "mo:base/Array";
+import Blob "mo:base/Blob";
 import Error "mo:base/Error";
+import Cycles "mo:base/ExperimentalCycles";
 import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
 import Option "mo:base/Option";
 import Principal "mo:base/Principal";
-import Text "mo:base/Text";
 import Result "mo:base/Result";
-import Array "mo:base/Array";
-import Blob "mo:base/Blob";
-
-import Types "../types/types";
-import IC "../types/ic.types";
-
-import CanisterUtils "../utils/canister.utils";
-import WalletUtils "../utils/wallet.utils";
-
-import BucketTypes "./bucket.types";
-import BucketStore "./bucket.store";
+import Text "mo:base/Text";
 
 import DataBucket "../data/data";
-
+import IC "../types/ic.types";
+import Types "../types/types";
+import CanisterUtils "../utils/canister.utils";
 import Utils "../utils/utils";
+import WalletUtils "../utils/wallet.utils";
+import BucketStore "./bucket.store";
+import BucketTypes "./bucket.types";
 
 actor Manager {
   private type UserId = Types.UserId;
@@ -210,17 +206,17 @@ actor Manager {
 
   private func getBucketControllers(caller : Principal, store : BucketStore.BucketStore) : async (?[Principal]) {
     let bucket = await getBucket(caller, store);
-    
+
     let status = await canisterUtils.canisterStatus(bucket.bucketId);
     return status.settings.controllers;
   };
 
-  private func getBucket(caller : Principal, store : BucketStore.BucketStore): async (Bucket) {
+  private func getBucket(caller : Principal, store : BucketStore.BucketStore) : async (Bucket) {
     if (Principal.isAnonymous(caller)) {
       throw Error.reject("Not allowed. Caller is anonymous.");
     };
 
-    let result : Result.Result<?Bucket, Text> = store.getBucket(caller);  
+    let result : Result.Result<?Bucket, Text> = store.getBucket(caller);
 
     switch (result) {
       case (#err error) {

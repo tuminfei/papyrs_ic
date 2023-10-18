@@ -1,6 +1,6 @@
-import Text "mo:base/Text";
-import Iter "mo:base/Iter";
 import Array "mo:base/Array";
+import Iter "mo:base/Iter";
+import Text "mo:base/Text";
 
 module {
 

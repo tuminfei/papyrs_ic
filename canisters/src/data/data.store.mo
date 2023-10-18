@@ -1,14 +1,12 @@
-import Text "mo:base/Text";
 import HashMap "mo:base/HashMap";
-import Result "mo:base/Result";
-import Time "mo:base/Time";
 import Int "mo:base/Int";
+import Result "mo:base/Result";
+import Text "mo:base/Text";
+import Time "mo:base/Time";
 
 import Store "../stores/store";
-
-import Filter "./record.filter";
 import DataTypes "./data.types";
-
+import Filter "./record.filter";
 import RecordUtils "./record.utils";
 
 module {

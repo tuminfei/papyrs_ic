@@ -1,9 +1,8 @@
-import Result "mo:base/Result";
 import Int "mo:base/Int";
-
-import InteractionTypes "./interaction.types";
+import Result "mo:base/Result";
 
 import Utils "../utils/utils";
+import InteractionTypes "./interaction.types";
 
 module {
 

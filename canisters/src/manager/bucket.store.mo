@@ -1,17 +1,16 @@
-import Principal "mo:base/Principal";
-import HashMap "mo:base/HashMap";
-import Text "mo:base/Text";
-import Option "mo:base/Option";
-import Iter "mo:base/Iter";
 import Array "mo:base/Array";
-import Result "mo:base/Result";
 import Error "mo:base/Error";
+import HashMap "mo:base/HashMap";
+import Iter "mo:base/Iter";
+import Option "mo:base/Option";
+import Principal "mo:base/Principal";
+import Result "mo:base/Result";
+import Text "mo:base/Text";
 
 import Types "../types/types";
-import BucketTypes "./bucket.types";
-
-import Utils "../utils/utils";
 import CanisterUtils "../utils/canister.utils";
+import Utils "../utils/utils";
+import BucketTypes "./bucket.types";
 
 module {
   private type UserId = Types.UserId;
@@ -157,7 +156,7 @@ module {
     };
 
     /**
-     * Does a bucket id exists? - i.e. not a bucket for a user but is a canister id linked to any user bucket? 
+     * Does a bucket id exists? - i.e. not a bucket for a user but is a canister id linked to any user bucket?
      */
     public func exists(canisterId : Principal) : (Bool) {
       let entries : Iter.Iter<(UserId, Bucket)> = buckets.entries();
